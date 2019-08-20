@@ -1,4 +1,4 @@
-# sauSmart
+# SauSmart
 SauSmart is a smart volume reader for your sauce bottles using an IoT approach, For every sauce you like SauSmart will extract some features from the bottle of the sauce that might implement bottle containment.
 
 Those features are related to bottle capacity.
