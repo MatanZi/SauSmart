@@ -4,18 +4,13 @@ import time
 import json
 import random
 
+from ubidots_handler.Config import Config
+
 '''
 global variables
 '''
 
 connected = False  # Stores the connection status
-BROKER_ENDPOINT = "industrial.api.ubidots.com"
-PORT = 1883
-MQTT_USERNAME = "BBFF-zIOTwedsfKj84fXarZXHmdgJaAcSBT"  # Put here your TOKEN
-MQTT_PASSWORD = ""
-TOPIC = "/v1.6/devices/"
-DEVICE_LABEL = "sausmart"
-VARIABLE_LABEL_1 = "volume"
 
 
 '''
@@ -68,7 +63,7 @@ def publish(mqtt_client, topic, payload):
         print("[ERROR] There was an error, details: \n{}".format(e))
 
 
-def main(mqtt_client ,ketchup_value):
+def main(mqtt_client ,ketchup_value ,conf):
     while ketchup_value > 0:
 
         choose = random.randint(1, 10)
@@ -79,14 +74,14 @@ def main(mqtt_client ,ketchup_value):
                 sub = random.randint(1, 5)
                 ketchup_value -= sub
                 # Builds Payload and topíc
-                payload = {VARIABLE_LABEL_1: ketchup_value,
+                payload = {conf.VARIABLE_LABEL: ketchup_value,
                            }
                 payload = json.dumps(payload)
-                topic = "{}{}".format(TOPIC, DEVICE_LABEL)
+                topic = "{}{}".format(conf.TOPIC, conf.DEVICE_LABEL)
 
                 if not connected:  # Connects to the broker
-                    connect(mqtt_client, MQTT_USERNAME, MQTT_PASSWORD,
-                            BROKER_ENDPOINT, PORT)
+                    connect(mqtt_client, conf.MQTT_USERNAME, conf.MQTT_PASSWORD,
+                            conf.BROKER_ENDPOINT, conf.PORT)
 
                 # Publishes values
                 print("[INFO] Attempting to publish payload:")
@@ -95,14 +90,14 @@ def main(mqtt_client ,ketchup_value):
 
         else:
             # Builds Payload and topíc
-            payload = {VARIABLE_LABEL_1: ketchup_value,
+            payload = {conf.VARIABLE_LABEL: ketchup_value,
                       }
             payload = json.dumps(payload)
-            topic = "{}{}".format(TOPIC, DEVICE_LABEL)
+            topic = "{}{}".format(conf.TOPIC, conf.DEVICE_LABEL)
 
             if not connected:  # Connects to the broker
-                connect(mqtt_client, MQTT_USERNAME, MQTT_PASSWORD,
-                        BROKER_ENDPOINT, PORT)
+                connect(mqtt_client, conf.MQTT_USERNAME, conf.MQTT_PASSWORD,
+                        conf.BROKER_ENDPOINT, conf.PORT)
 
             # Publishes values
             print("[INFO] Attempting to publish payload:")
@@ -112,8 +107,9 @@ def main(mqtt_client ,ketchup_value):
 
 
 if __name__ == '__main__':
+    conf = Config()
     mqtt_client = mqttClient.Client()
     ketchup = random.randint(80, 100)
     while True:
-        main(mqtt_client, ketchup)
+        main(mqtt_client, ketchup , conf)
         time.sleep(1)
