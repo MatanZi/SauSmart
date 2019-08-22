@@ -40,6 +40,7 @@ def on_message(mqttc, obj, msg):
 
     # Getting all the values from the server.
     value_list = get_values(device_label=conf.DEVICE_LABEL, var_label=conf.VARIABLE_LABEL, items=1000000000000000000000000)
+    print(value_list)
 
 def on_publish(mqttc, obj, mid):
     print("[INFO] Published!")
