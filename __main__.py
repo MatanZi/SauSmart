@@ -3,8 +3,8 @@
 import webbrowser
 import tkinter as tk
 from ubidots_handler.build_graph import build_graph
-
-
+from ubidots_handler.get_data import get_last_sample
+from ML.Bigml_handler import BIGML_Model
 # Driver code
 if __name__ == "__main__":
 	# create a GUI window
@@ -44,11 +44,9 @@ if __name__ == "__main__":
 	bigML_btn.grid(row=4, column=0)
 
 	pred_btn = tk.Button(gui, text=' select date graph ', fg='black', bg='light green',
-					command=lambda: build_graph(), height=5, width=20, font=16)
+					command=lambda: print(BIGML_Model('modelid').get_predict(get_last_sample())),
+                         height=5, width=20, font=16)
 	pred_btn.grid(row=5, column=0)
 
 	# start the GUI
 	gui.mainloop()
-
-
-

@@ -1,6 +1,7 @@
 import plotly.graph_objects as go
 import pandas as pd
 
+
 def build_graph():
     df = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv")
     print("test")

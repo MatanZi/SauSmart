@@ -1,8 +1,9 @@
 import paho.mqtt.client as mqtt
 from datetime import datetime
 import plotly.graph_objects as go
+
 import requests
-from ubidots_handler.Config import Config
+from ubidots_handler.Config import Config as conf
 import pandas as pd
 import json
 
@@ -12,7 +13,6 @@ import json
 GLOBAL Variables
 '''
 value_list =[]
-
 
 
 def on_connect(mqttc, obj, flags, rc):
