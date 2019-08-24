@@ -70,6 +70,26 @@ def get_values(device_label, var_label, items):
         return {'error': 'Request failed or timed out'}
 
 
+def get_last_sample():
+    full_volume_list = get_values(device_label=conf.DEVICE_LABEL, var_label=conf.VARIABLE_LABEL,
+                                  items=1000000000000000000000000)
+    first_list = []
+    curr_val = full_volume_list['volume'].loc[0]
+    found = False
+    counter = 0
+    for val in full_volume_list['volume'][0:]:
+        if val > curr_val:
+            if counter == 0:
+                first_list.append(curr_val)
+                counter += 1
+            first_list.append(val)
+            found = True
+        elif found:
+            break
+        curr_val = val
+    return first_list
+
+
 def main(conf):
     # Setup MQTT client
     mqttc = mqtt.Client()
@@ -91,5 +111,6 @@ def main(conf):
     mqttc.loop_forever()
 
 if __name__ == '__main__':
-    conf = Config()
-    main(conf)
+    #conf = Config()
+    #main(conf)
+    print(get_last_sample())

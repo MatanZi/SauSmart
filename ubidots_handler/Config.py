@@ -1,5 +1,6 @@
 from ubidots import ApiClient
 
+
 class Config():
     def __init__(self):
         self.BROKER_ENDPOINT = "industrial.api.ubidots.com"
