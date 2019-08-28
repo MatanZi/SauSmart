@@ -8,7 +8,7 @@ dataset_path = os.path.dirname(os.path.abspath(""))
 
 
 def build_soya():
-    for i in range(10):
+    for i in range(1):
         soya = random.randint(10, 20)
         result = []
 
@@ -28,7 +28,7 @@ def build_soya():
 
 
 def build_ketchup():
-    for i in range(10):
+    for i in range(11):
         ketchup = random.randint(10,20)
         result = []
 
@@ -42,13 +42,13 @@ def build_ketchup():
                         result.append(ketchup)
                 else:
                     result.append(ketchup)
-        df = pd.DataFrame(result, columns=["voulme"])
+        df = pd.DataFrame(result, columns=["volume"])
         df.to_csv("ketchup_"+str(i)+".csv")
 
 
 
 def build_mayo():
-    for i in range(10):
+    for i in range(11):
         mayo  = random.randint(10, 20)
         result = []
 
@@ -58,18 +58,18 @@ def build_mayo():
                 if choose < 3 and break_time < 3:
                     for j in range(random.randint(3, 7)):
                         sub = random.randint(1, 5)
-                        mayo  += sub
-                        result.append(mayo )
+                        mayo += sub
+                        result.append(mayo)
                 else:
                     result.append(mayo )
-        df = pd.DataFrame(result, columns=["voulme"])
+        df = pd.DataFrame(result, columns=["volume"])
         df.to_csv("mayo_"+str(i)+".csv")
 
 
 
-build_mayo()
+#build_mayo()
 build_soya()
-build_ketchup()
+#build_ketchup()
 
 '''
 for dirName, subdirList, fileList in os.walk(os.path.join(dataset_path)):

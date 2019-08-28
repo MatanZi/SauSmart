@@ -4,15 +4,15 @@ from feature_handler.FeatureCalculator import FeatureCalculator
 global dataset_path
 global sauces
 
-dataset_path = 'C:\\Users\\Saimon\\PycharmProjects\\SauSmart'
+dataset_path = 'C:\\Users\\Saimon\\Desktop\\dataset_iot'
 sauces = ['ketchup', 'mayo', 'soy']
 
 
 class FeatureExtractor:
 
     @staticmethod
-    def convert_differences(df):
-        volumes = df['volume']
+    def convert_differences(volumes):
+
         diff_list = []
         for i in range(len(volumes) - 1):
             diff_list.append(volumes[i+1] - volumes[i])
@@ -42,7 +42,7 @@ class FeatureExtractor:
             for fname in fileList:
                 if fname.endswith('.csv'):
                     df = pd.read_csv(os.path.join(dirName, fname))
-                    peak_list = FeatureExtractor.peak_build(FeatureExtractor.convert_differences(df))
+                    peak_list = FeatureExtractor.peak_build(FeatureExtractor.convert_differences(volumes=df['volume']))
                     if 'ketchup' in fname:
                         sauce_type = sauces[0]
                     elif 'mayo' in fname:
@@ -63,10 +63,13 @@ class FeatureExtractor:
     @staticmethod
     def convert_sample(last_values):
         dict_row = {}
-        fc = FeatureCalculator(last_values)
+        df = pd.DataFrame(FeatureExtractor.convert_differences(last_values), columns=['diff'])
+        fc = FeatureCalculator(df)
         dict_row.update([('sum', fc.sum_change()), ('mean', fc.mean_change()), ('std', fc.std_change()),
                          ('var', fc.var_change()), ('max', fc.max_change()), ('min', fc.min_change()),
                          ('size', fc.size_change())])
         return dict_row
 
 
+if __name__ == "__main__":
+    FeatureExtractor.extract_dataset()

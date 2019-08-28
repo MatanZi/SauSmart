@@ -3,9 +3,10 @@ from datetime import datetime
 import plotly.graph_objects as go
 
 import requests
-from ubidots_handler.Config import Config as conf
+from ubidots_handler.Config import Config
 import pandas as pd
 import json
+conf = Config()
 
 
 
@@ -63,7 +64,6 @@ def get_values(device_label, var_label, items):
     base_url = "http://things.ubidots.com/api/v1.6/devices/" + device_label + "/" + var_label + "/values"
     try:
         r = requests.get(base_url + '?token=' + conf.MQTT_USERNAME + "&page_size=" + str(items), timeout=20)
-
         return pd.io.json.json_normalize(r.json()["results"])
     except Exception as e:
         print(e)
@@ -74,10 +74,10 @@ def get_last_sample():
     full_volume_list = get_values(device_label=conf.DEVICE_LABEL, var_label=conf.VARIABLE_LABEL,
                                   items=1000000000000000000000000)
     first_list = []
-    curr_val = full_volume_list['volume'].loc[0]
+    curr_val = full_volume_list['value'].loc[0]
     found = False
     counter = 0
-    for val in full_volume_list['volume'][0:]:
+    for val in full_volume_list['value'][0:]:
         if val > curr_val:
             if counter == 0:
                 first_list.append(curr_val)
