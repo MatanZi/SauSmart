@@ -30,20 +30,20 @@ if __name__ == "__main__":
 	# location inside the root window .
 	# when user press the button, the command or
 	# function affiliated to that button is executed .
-	last_hour_btn = tk.Button(gui, text=' last hour graph ', fg='black', bg='light green',
+	last_hour_btn = tk.Button(gui, text=' show last hour chart ', fg='black', bg='light green',
 							  command=lambda: webbrowser.open('https://industrial.ubidots.com/app/dashboards/public/widget/Xh2CwDpvLj1KwU9dE0vHWpH0OpQ')
 							  , height=5, width=20, font=16)
 	last_hour_btn.grid(row=2, column=0)
 
-	selected_date_btn = tk.Button(gui, text=' selected date graph ', fg='black', bg='light green',
+	selected_date_btn = tk.Button(gui, text=' show date graph ', fg='black', bg='light green',
 					command=lambda: build_graph(), height=5, width=20, font=16)
 	selected_date_btn.grid(row=3, column=0)
 
-	bigML_btn = tk.Button(gui, text=' select date graph ', fg='black', bg='light green',
-					command=lambda: build_graph(), height=5, width=20, font=16)
+	bigML_btn = tk.Button(gui, text=' show tank value ', fg='black', bg='light green',
+					command=lambda: webbrowser.open('https://industrial.ubidots.com/app/dashboards/public/widget/8TY39vGV8Tv7mLitDlb5wYOCxcE'), height=5, width=20, font=16)
 	bigML_btn.grid(row=4, column=0)
 
-	pred_btn = tk.Button(gui, text=' select date graph ', fg='black', bg='light green',
+	pred_btn = tk.Button(gui, text=' show prediction ', fg='black', bg='light green',
 					command=lambda: print(BIGML_Model('modelid').get_predict(get_last_sample())),
                          height=5, width=20, font=16)
 	pred_btn.grid(row=5, column=0)
