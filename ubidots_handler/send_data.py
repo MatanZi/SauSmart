@@ -75,8 +75,8 @@ def main(mqtt_client, value, type, conf):
                 if choose < 6 and break_time < 3:
                     for i in range(random.randint(3, 7)):
                         time.sleep(1)
-                        sub = random.randint(1, 5)
-                        value -= sub
+                        add = random.randint(1, 5)
+                        value += add
                         if value <= 0:
                             break
                         else:
@@ -95,14 +95,14 @@ def main(mqtt_client, value, type, conf):
                             print(payload)
                             publish(mqtt_client, topic, payload)
 
-            elif type_value < 5 and type_value > 3:
+            elif type_value < 6 and type_value > 3:
                 choose = random.randint(1, 10)
                 break_time = random.randint(1, 10)
                 if choose < 3 and break_time < 3:
                     for i in range(random.randint(3, 7)):
                         time.sleep(1)
-                        sub = random.randint(1, 5)
-                        value -= sub
+                        add = random.randint(1, 5)
+                        value += add
                         if value <= 0:
                             break
 
@@ -122,14 +122,14 @@ def main(mqtt_client, value, type, conf):
                             print(payload)
                             publish(mqtt_client, topic, payload)
 
-            elif type_value == 5:
+            elif type_value == 6:
                 choose = random.randint(1, 10)
                 break_time = random.randint(1, 10)
                 if choose < 3 and break_time < 2:
                     for i in range(random.randint(3, 7)):
                         time.sleep(1)
-                        sub = random.randint(1, 5)
-                        value -= sub
+                        add = random.randint(1, 5)
+                        value += add
                         if value <= 0:
                             break
 
@@ -155,7 +155,7 @@ if __name__ == '__main__':
     conf = Config()
     mqtt_client = mqttClient.Client()
     while True:
-        type_value = random.randint(1, 5)
-        value = random.randint(80, 100)
+        type_value = random.randint(1, 6)
+        value = random.randint(5, 20)
         main(mqtt_client, value, type_value, conf)
         time.sleep(1)
