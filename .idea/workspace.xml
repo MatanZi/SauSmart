@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5c8ccfe5-a733-4a26-a5bf-986ad02778bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/Gui_interaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/Gui_interaction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iot - Tank volume reader.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/Iot - Tank volume reader.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__main__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset_handler/build_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_handler/build_dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ubidots_handler/get_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/ubidots_handler/get_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ubidots_handler/send_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/ubidots_handler/send_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -215,6 +211,7 @@
       <workItem from="1566685670234" duration="2683000" />
       <workItem from="1566774666597" duration="88000" />
       <workItem from="1566975279442" duration="10759000" />
+      <workItem from="1567077278508" duration="968000" />
     </task>
     <servers />
   </component>

@@ -130,6 +130,7 @@ def main(mqtt_client, value, type, conf):
                         time.sleep(1)
                         add = random.randint(1, 5)
                         value += add
+
                         if value <= 0:
                             break
 
@@ -158,4 +159,4 @@ if __name__ == '__main__':
         type_value = random.randint(1, 6)
         value = random.randint(5, 20)
         main(mqtt_client, value, type_value, conf)
-        time.sleep(1)
+        time.sleep(0.1)
