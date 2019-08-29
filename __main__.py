@@ -29,13 +29,13 @@ if __name__ == "__main__":
 	# location inside the root window .
 	# when user press the button, the command or
 	# function affiliated to that button is executed .
-	last_hour_btn = tk.Button(gui, text=' last hour graph ', fg='black', bg='light green',
-							  command=lambda: webbrowser.open('https://industrial.ubidots.com/app/dashboards/public'
-															  '/widget/Xh2CwDpvLj1KwU9dE0vHWpH0OpQ')
+
+	last_hour_btn = tk.Button(gui, text=' show last hour chart ', fg='black', bg='light green',
+							  command=lambda: webbrowser.open('https://industrial.ubidots.com/app/dashboards/public/widget/Xh2CwDpvLj1KwU9dE0vHWpH0OpQ')
 							  , height=5, width=20, font=16)
 	last_hour_btn.grid(row=2, column=0)
 
-	selected_date_btn = tk.Button(gui, text=' selected date graph ', fg='black', bg='light green',
+	selected_date_btn = tk.Button(gui, text=' show date graph ', fg='black', bg='light green',
 					command=lambda: build_graph(), height=5, width=20, font=16)
 	selected_date_btn.grid(row=3, column=0)
 
@@ -43,6 +43,7 @@ if __name__ == "__main__":
 						  command=lambda: webbrowser.open('https://bigml.com/dashboard/model/5d66af8c42129f066f00002b'),
 						  height=5, width=20, font=16)
 	bigML_btn.grid(row=4, column=0)
+
 	w2 = tk.Label(gui, text="\n\n\n\n", height=1, width=0, font=20, fg='blue')
 
 	pred_btn = tk.Button(gui, text='Get last prediction', fg='black', bg='light green',

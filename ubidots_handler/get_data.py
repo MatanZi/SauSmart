@@ -4,6 +4,7 @@ import plotly.graph_objects as go
 
 import requests
 from ubidots_handler.Config import Config
+
 import pandas as pd
 import json
 conf = Config()
@@ -25,7 +26,6 @@ def on_connect(mqttc, obj, flags, rc):
 def on_message(mqttc, obj, msg):
     # Retrieving data
     value = conf.variable.get_values(1)[0]
-    #print("test")
 
     voulme = value.get("value")
     timestamp = value.get("timestamp")
@@ -111,6 +111,6 @@ def main(conf):
     mqttc.loop_forever()
 
 if __name__ == '__main__':
-    #conf = Config()
-    #main(conf)
-    print(get_last_sample())
+    conf = Config()
+    main(conf)
+    #print(get_last_sample())

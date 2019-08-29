@@ -7,6 +7,7 @@
       <change beforePath="$PROJECT_DIR$/dataset_handler/build_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_handler/build_dataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feature_handler/FeatureExtractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_handler/FeatureExtractor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ubidots_handler/get_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/ubidots_handler/get_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ubidots_handler/send_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/ubidots_handler/send_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +15,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -66,6 +68,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> cd1b10fbe20c2eede62372094981477030e3112d
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -82,6 +86,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -97,6 +102,8 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> cd1b10fbe20c2eede62372094981477030e3112d
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -104,6 +111,7 @@
       </set>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="305" />
     <option name="width" value="1950" />
@@ -149,6 +157,9 @@
       </pane>
     </panes>
   </component>
+=======
+  <component name="ProjectId" id="1PSDCG7hm0Y2meh23m12ShNhPuB" />
+>>>>>>> cd1b10fbe20c2eede62372094981477030e3112d
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -177,8 +188,13 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.build_dataset">
     <configuration name="Bigml_handler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+  <component name="RunManager" selected="Python.__main__">
+    <configuration name="RandomForest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> cd1b10fbe20c2eede62372094981477030e3112d
       <module name="SuSamrt" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -191,7 +207,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML/Bigml_handler.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ML/RandomForest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -244,7 +260,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="build_dataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration name="send_data (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> cd1b10fbe20c2eede62372094981477030e3112d
       <module name="SuSamrt" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -252,12 +272,20 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+<<<<<<< HEAD
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dataset_handler" />
+=======
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ubidots_handler" />
+>>>>>>> cd1b10fbe20c2eede62372094981477030e3112d
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataset_handler/build_dataset.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ubidots_handler/send_data.py" />
+>>>>>>> cd1b10fbe20c2eede62372094981477030e3112d
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -266,7 +294,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="get_data (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration name="test_send" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> cd1b10fbe20c2eede62372094981477030e3112d
       <module name="SuSamrt" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -279,7 +311,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ubidots_handler/get_data.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ubidots_handler/test_send.py" />
+>>>>>>> cd1b10fbe20c2eede62372094981477030e3112d
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -290,11 +326,19 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Python.build_dataset" />
         <item itemvalue="Python.__main__" />
         <item itemvalue="Python.FeatureExtractor" />
         <item itemvalue="Python.Bigml_handler" />
         <item itemvalue="Python.get_data (1)" />
+=======
+        <item itemvalue="Python.__main__" />
+        <item itemvalue="Python.send_data (1)" />
+        <item itemvalue="Python.test_send" />
+        <item itemvalue="Python.get_data (1)" />
+        <item itemvalue="Python.RandomForest" />
+>>>>>>> cd1b10fbe20c2eede62372094981477030e3112d
       </list>
     </recent_temporary>
   </component>
@@ -320,9 +364,11 @@
       <workItem from="1566456748585" duration="2000000" />
       <workItem from="1566458820548" duration="673000" />
       <workItem from="1566459668149" duration="26000" />
+      <workItem from="1566464072962" duration="5385000" />
       <workItem from="1566464072962" duration="5167000" />
       <workItem from="1566664008887" duration="313000" />
       <workItem from="1566664388418" duration="4736000" />
+<<<<<<< HEAD
       <workItem from="1566669255847" duration="9171000" />
     </task>
     <servers />
@@ -380,6 +426,16 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout-to-restore>
   </component>
+=======
+      <workItem from="1566669255847" duration="1956000" />
+      <workItem from="1566680830296" duration="426000" />
+      <workItem from="1566685670234" duration="2683000" />
+      <workItem from="1566774666597" duration="88000" />
+      <workItem from="1566975279442" duration="6258000" />
+    </task>
+    <servers />
+  </component>
+>>>>>>> cd1b10fbe20c2eede62372094981477030e3112d
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -389,12 +445,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -418,6 +468,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SuSamrt$ret.coverage" NAME="ret Coverage Results" MODIFIED="1566315869350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/SuSamrt$send_data.coverage" NAME="send_data Coverage Results" MODIFIED="1566321110613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SuSamrt$graph.coverage" NAME="graph Coverage Results" MODIFIED="1566318756575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SuSamrt$get_data.coverage" NAME="get_data Coverage Results" MODIFIED="1566321565443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -427,16 +478,32 @@
     <SUITE FILE_PATH="coverage/SuSamrt$ret2.coverage" NAME="ret2 Coverage Results" MODIFIED="1566315888427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SuSamrt$build_dataset.coverage" NAME="build_dataset Coverage Results" MODIFIED="1566144300064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataset_handler" />
     <SUITE FILE_PATH="coverage/SauSmart$Bigml_handler.coverage" NAME="Bigml_handler Coverage Results" MODIFIED="1566670226403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ML" />
+=======
+    <SUITE FILE_PATH="coverage/SauSmart$test_send.coverage" NAME="test_send Coverage Results" MODIFIED="1566994437115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ubidots_handler" />
+>>>>>>> cd1b10fbe20c2eede62372094981477030e3112d
     <SUITE FILE_PATH="coverage/SuSamrt$1.coverage" NAME="1 Coverage Results" MODIFIED="1566145300696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SauSmart$send_data__1_.coverage" NAME="send_data (1) Coverage Results" MODIFIED="1566458020660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ubidots_handler" />
+    <SUITE FILE_PATH="coverage/SauSmart$send_data__1_.coverage" NAME="send_data (1) Coverage Results" MODIFIED="1566994673071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ubidots_handler" />
+    <SUITE FILE_PATH="coverage/SuSamrt$send_2.coverage" NAME="send 2 Coverage Results" MODIFIED="1566165723647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SuSamrt$send.coverage" NAME="send Coverage Results" MODIFIED="1566164222333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SuSamrt$test.coverage" NAME="test Coverage Results" MODIFIED="1566321513561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SuSamrt$send_2.coverage" NAME="send 2 Coverage Results" MODIFIED="1566165723647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SuSamrt$ret_3.coverage" NAME="ret 3 Coverage Results" MODIFIED="1566315811277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/SauSmart$get_data__1_.coverage" NAME="get_data (1) Coverage Results" MODIFIED="1566667875829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ubidots_handler" />
     <SUITE FILE_PATH="coverage/SauSmart$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1567017779708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+=======
+    <SUITE FILE_PATH="coverage/SauSmart$__main__.coverage" NAME="__main__ Coverage Results" MODIFIED="1566994719536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SuSamrt$get_data.coverage" NAME="get_data Coverage Results" MODIFIED="1566321565443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SuSamrt$send_3.coverage" NAME="send 3 Coverage Results" MODIFIED="1566315764852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SuSamrt$graph.coverage" NAME="graph Coverage Results" MODIFIED="1566318756575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SuSamrt$build_dataset.coverage" NAME="build_dataset Coverage Results" MODIFIED="1566144300064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataset_handler" />
+    <SUITE FILE_PATH="coverage/SauSmart$RandomForest.coverage" NAME="RandomForest Coverage Results" MODIFIED="1566686451606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ML" />
+    <SUITE FILE_PATH="coverage/SauSmart$get_data__1_.coverage" NAME="get_data (1) Coverage Results" MODIFIED="1566978819001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ubidots_handler" />
+>>>>>>> cd1b10fbe20c2eede62372094981477030e3112d
     <SUITE FILE_PATH="coverage/SuSamrt$send_4.coverage" NAME="send 4 Coverage Results" MODIFIED="1566213105666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SuSamrt$send_data.coverage" NAME="send_data Coverage Results" MODIFIED="1566321110613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SuSamrt$ret2.coverage" NAME="ret2 Coverage Results" MODIFIED="1566315888427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SuSamrt$2.coverage" NAME="2 Coverage Results" MODIFIED="1566145485996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/SauSmart$build_dataset.coverage" NAME="build_dataset Coverage Results" MODIFIED="1567017980460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataset_handler" />
   </component>
   <component name="editorHistoryManager">
@@ -553,5 +620,9 @@
         </state>
       </provider>
     </entry>
+=======
+    <SUITE FILE_PATH="coverage/SuSamrt$send_to_ubidots.coverage" NAME="send_to_ubidots Coverage Results" MODIFIED="1566144579118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SauSmart$Bigml_handler.coverage" NAME="Bigml_handler Coverage Results" MODIFIED="1566686422880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ML" />
+>>>>>>> cd1b10fbe20c2eede62372094981477030e3112d
   </component>
 </project>
