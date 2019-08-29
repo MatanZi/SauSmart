@@ -38,7 +38,7 @@ def build_ketchup():
         while ketchup < 100:
             choose = random.randint(1, 10)
             break_time = random.randint(1, 10)
-            if choose < 6 and break_time < 3:
+            if choose < 4 and break_time < 3:
                 for i in range(random.randint(5, 7)):
                     add = random.randint(1, 5)
                     ketchup += add
@@ -46,8 +46,8 @@ def build_ketchup():
                         break
                     else:
                         result.append(ketchup)
-                else:
-                    result.append(ketchup)
+            else:
+                result.append(ketchup)
 
         df = pd.DataFrame(result, columns=["volume"])
         df.to_csv("ketchup_"+str(i)+".csv")

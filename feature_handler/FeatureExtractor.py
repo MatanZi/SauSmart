@@ -4,7 +4,7 @@ from feature_handler.FeatureCalculator import FeatureCalculator
 global dataset_path
 global sauces
 
-dataset_path = 'C:\\Users\\Saimon\\Desktop\\dataset_iot'
+dataset_path = 'C:\\Users\\Matan\\Documents\\GitHub\\SauSmart\\dataset_handler'
 sauces = ['ketchup', 'mayo', 'soy']
 
 

@@ -60,6 +60,8 @@ Get values from variable
 """
 
 
+
+
 def get_values(device_label, var_label, items):
     base_url = "http://things.ubidots.com/api/v1.6/devices/" + device_label + "/" + var_label + "/values"
     try:

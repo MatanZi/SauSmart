@@ -3,6 +3,7 @@ import paho.mqtt.client as mqttClient
 import time
 import json
 import random
+import pandas as pd
 
 from ubidots_handler.Config import Config
 
@@ -10,9 +11,19 @@ from ubidots_handler.Config import Config
 global variables
 '''
 
+'''
+global variables
+'''
+
 connected = False  # Stores the connection status
+BROKER_ENDPOINT = "industrial.api.ubidots.com"
+PORT = 1883
+MQTT_USERNAME = "BBFF-zIOTwedsfKj84fXarZXHmdgJaAcSBT"  # Put here your TOKEN
+MQTT_PASSWORD = ""
+TOPIC = "/v1.6/devices/"
+DEVICE_LABEL = "sausmart"
+VARIABLE_LABEL = "volume"
 mqtt_client = mqttClient.Client()
-conf = Config()
 
 '''
 Functions to process incoming and outgoing streaming
@@ -65,18 +76,33 @@ def publish(mqtt_client, topic, payload):
 
 
 def send_data(df):
-
     # send Payload and topíc
-    for val in df['value']:
-        payload = {conf.VARIABLE_LABEL: val}
+    for val in df['volume']:
+        payload = {VARIABLE_LABEL: val}
         payload = json.dumps(payload)
-        topic = "{}{}".format(conf.TOPIC, conf.DEVICE_LABEL)
+        topic = "{}{}".format(TOPIC, DEVICE_LABEL)
 
         if not connected:  # Connects to the broker
-            connect(mqtt_client, conf.MQTT_USERNAME, conf.MQTT_PASSWORD,
-                    conf.BROKER_ENDPOINT, conf.PORT)
+            connect(mqtt_client, MQTT_USERNAME, MQTT_PASSWORD,
+                    BROKER_ENDPOINT, PORT)
 
         # Publishes values
         print("[INFO] Attempting to publish payload:")
         print(payload)
         publish(mqtt_client, topic, payload)
+        time.sleep(0.1)
+
+
+
+
+
+ketchup_csv = pd.read_csv('C:\\Users\\Matan\\Documents\\GitHub\\SauSmart\\dataset_handler\\sample_files\\ketchup_0.csv')
+mayo_csv = pd.read_csv('C:\\Users\\Matan\\Documents\\GitHub\\SauSmart\\dataset_handler\\sample_files\\mayo_0.csv')
+soya_csv = pd.read_csv('C:\\Users\\Matan\\Documents\\GitHub\\SauSmart\\dataset_handler\\sample_files\\soya_0.csv')
+
+send_data(ketchup_csv)
+time.sleep(1)
+send_data(mayo_csv)
+time.sleep(1)
+send_data(soya_csv)
+time.sleep(1)
