@@ -13,13 +13,13 @@ if __name__ == "__main__":
 	gui = tk.Tk()
 
 	# set the background colour of GUI window
-	gui.configure()
+	gui.configure(background="black")
 
 	# set the title of GUI window
 	gui.title("SauSmart")
 
 	# set the configuration of GUI window
-	gui.geometry("400x600")
+	gui.geometry("400x750")
 
 	# Create label
 	w = tk.Label(gui, text="\nWelcome to SauSmart place choose a button\n", height=1, width=0, font=20 ,fg='blue', bg='yellow')
@@ -39,7 +39,7 @@ if __name__ == "__main__":
 					command=lambda: build_graph(), height=5, width=20, font=16)
 	selected_date_btn.grid(row=3, column=0)
 
-	bigML_btn = tk.Button(gui, text=' select date graph ', fg='black', bg='light green',
+	bigML_btn = tk.Button(gui, text=' show decision tree ', fg='black', bg='light green',
 						  command=lambda: webbrowser.open('https://bigml.com/dashboard/model/5d66af8c42129f066f00002b'),
 						  height=5, width=20, font=16)
 	bigML_btn.grid(row=4, column=0)
@@ -48,7 +48,7 @@ if __name__ == "__main__":
 						  command=lambda: webbrowser.open(
 							  'https://industrial.ubidots.com/app/dashboards/public/widget/8TY39vGV8Tv7mLitDlb5wYOCxcE'),
 						  height=5, width=20, font=16)
-	tank_btn.grid(row=4, column=0)
+	tank_btn.grid(row=5, column=0)
 
 	w2 = tk.Label(gui, text="\n\n\n\n", height=1, width=0, font=20, fg='blue')
 
@@ -56,7 +56,7 @@ if __name__ == "__main__":
 						 command=lambda: w2.config(text=BIGML_Model(model_path='model/5d66af8c42129f066f00002b').
 												   get_predict(FeatureExtractor.convert_sample(get_last_sample()))),
 						 height=5, width=20, font=16)
-	pred_btn.grid(row=5, column=0)
+	pred_btn.grid(row=6, column=0)
 
 	w2.grid()
 	#rint()
