@@ -8,30 +8,30 @@ dataset_path = os.path.dirname(os.path.abspath(""))
 
 
 def build_soya():
-    for i in range(1):
-        soya = random.randint(10, 20)
+    for i in range(10):
+        soy = random.randint(10, 20)
         result = []
 
-        while soya < 100:
+        while soy < 100:
                 choose = random.randint(1, 10)
                 break_time = random.randint(1, 10)
                 if choose < 3 and break_time < 2:
                     for j in range(random.randint(2, 4)):
                         add = random.randint(1, 5)
-                        soya += add
-                        if soya > 100:
+                        soy += add
+                        if soy > 100:
                             break
                         else:
-                            result.append(soya)
+                            result.append(soy)
                 else:
-                    result.append(soya)
+                    result.append(soy)
         df = pd.DataFrame(result, columns=["volume"])
         df.to_csv("soya_"+str(i)+".csv")
 
 
 
 def build_ketchup():
-    for i in range(11):
+    for i in range(10):
         ketchup = random.randint(10,20)
         result = []
 
@@ -48,14 +48,15 @@ def build_ketchup():
                         result.append(ketchup)
                 else:
                     result.append(ketchup)
+
         df = pd.DataFrame(result, columns=["volume"])
         df.to_csv("ketchup_"+str(i)+".csv")
 
 
 
 def build_mayo():
-    for i in range(11):
-        mayo  = random.randint(10, 20)
+    for i in range(10):
+        mayo = random.randint(10, 20)
         result = []
 
         while mayo < 100:
@@ -70,15 +71,16 @@ def build_mayo():
                         else:
                             result.append(mayo)
                 else:
-                    result.append(mayo )
+                    result.append(mayo)
+
         df = pd.DataFrame(result, columns=["volume"])
         df.to_csv("mayo_"+str(i)+".csv")
 
 
 
-#build_mayo()
+build_mayo()
 build_soya()
-#build_ketchup()
+build_ketchup()
 
 
 
