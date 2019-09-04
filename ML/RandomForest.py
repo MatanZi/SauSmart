@@ -8,8 +8,6 @@ import datetime
 
 """
 Random Forest regression algorithm each row of feature based on full session,flow up and down
-Works for both app predicting and video/non video classifying 
-Need upgrade this in this section 
 """
 
 
